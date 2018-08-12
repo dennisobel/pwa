@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, ViewController, NavParams } from 'ionic-angular';
+import { NavController, ViewController } from 'ionic-angular';
 
 // Pages
 import { CalenderPage } from '../calender/calender';
@@ -21,8 +21,7 @@ export class LeasingPage {
     private navCtrl: NavController, 
     private viewCtrl: ViewController, 
     private dataProvider: SampledataProvider,
-    private helperFuncts: HelperfunctionsProvider,    
-    private navParams: NavParams) {
+    private helperFuncts: HelperfunctionsProvider) {
   }
 
   ionViewDidLoad() {

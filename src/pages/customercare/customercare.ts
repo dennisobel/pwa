@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { NavController, NavParams, ViewController } from 'ionic-angular';
+import { ViewController } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { SocialSharing } from '@ionic-native/social-sharing';
 
@@ -13,9 +13,7 @@ export class CustomercarePage {
   @ViewChild('myInput') myInput: ElementRef;
 
   constructor(
-    private navCtrl: NavController, 
     private viewCtrl: ViewController, 
-    private navParams: NavParams,
     private formBuilder: FormBuilder,
     private social: SocialSharing) {
 

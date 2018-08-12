@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController, ModalController, AlertController } from 'ionic-angular';
-import { Platform } from 'ionic-angular';
 
 // Pages
 import { MyaccountPage } from '../myaccount/myaccount';
@@ -13,7 +11,6 @@ import { CustomercarePage } from '../customercare/customercare';
 // Providers
 import { HelperfunctionsProvider } from '../../providers/helperfunctions/helperfunctions';
 import { SampledataProvider } from '../../providers/sampledata/sampledata';
-import { SocialSharing } from '@ionic-native/social-sharing';
 
 
 
@@ -23,16 +20,10 @@ import { SocialSharing } from '@ionic-native/social-sharing';
   selector: 'page-home',
   templateUrl: 'home.html'
 })
-export class HomePage {
-  private data: any;
- 
+export class HomePage { 
   constructor(
-    private navCtrl: NavController, 
-    private modalCtrl: ModalController, 
-    private alertCtrl: AlertController, 
     private helpers: HelperfunctionsProvider,
-    private dataProvider: SampledataProvider,
-    private socialSharing: SocialSharing) {
+    private dataProvider: SampledataProvider) {
  
   }
 

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, ViewController } from 'ionic-angular';
+import { NavController, ViewController } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 
 // Providers
@@ -16,7 +16,6 @@ export class UserinfoPage {
     public navCtrl: NavController,
     private viewCtrl: ViewController, 
     private formBuilder: FormBuilder,
-    private navParams: NavParams,
     private httpProvider: HttpProvider){
 
       this.profileFormGroup = this.formBuilder.group({
