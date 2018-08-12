@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, ViewController, NavParams } from 'ionic-angular';
+import { NavController, ViewController } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 // import { NativePageTransitions, NativeTransitionOptions } from '@ionic-native/native-page-transitions';
 
@@ -18,7 +18,6 @@ export class MyaccountPage {
     public navCtrl: NavController,
     private viewCtrl: ViewController, 
     private formBuilder: FormBuilder,
-    private navParams: NavParams,
     private httpProvider: HttpProvider) {
 
       this.profileFormGroup = this.formBuilder.group({

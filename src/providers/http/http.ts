@@ -1,4 +1,4 @@
-import { Http, Headers, Response } from '@angular/http';
+import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { Injectable } from '@angular/core';
 
@@ -13,10 +13,10 @@ export class HttpProvider {
   }
 
   private online = {
-    bookserviceURL:"https://hidden-depths-95908.herokuapp.com/bookservice",
-    rentalURL:"https://hidden-depths-95908.herokuapp.com/rental",
-    buyspareURL:"https://hidden-depths-95908.herokuapp.com/buyspare",
-    profileURL:"https://hidden-depths-95908.herokuapp.com/profile",    
+    bookserviceURL:"https://achelis.herokuapp.com/bookservice",
+    rentalURL:"https://achelis.herokuapp.com/rental",
+    buyspareURL:"https://achelis.herokuapp.com/buyspare",
+    profileURL:"https://achelis.herokuapp.com/profile",    
   }
 
   constructor(public http: Http) {}
@@ -26,7 +26,7 @@ export class HttpProvider {
     let headers = new Headers()
     headers.append("Accept","application/json")
     headers.append("Content-Type","application/json");
-    return this.http.post(this.offline.buyspareURL,body,{headers})
+    return this.http.post(this.online.buyspareURL,body,{headers})
       .map(res => res.json())
   }
 
@@ -36,7 +36,7 @@ export class HttpProvider {
     headers.append("Accept","application/json")
     headers.append("Content-Type","application/json");
     console.log(headers)
-    return this.http.post(this.offline.bookserviceURL,body,{headers})
+    return this.http.post(this.online.bookserviceURL,body,{headers})
       .map(res => res.json())
   }
 
@@ -45,7 +45,7 @@ export class HttpProvider {
     let headers = new Headers()
     headers.append("Accept","application/json")
     headers.append("Content-Type","application/json");
-    return this.http.post(this.offline.rentalURL,body,{headers})
+    return this.http.post(this.online.rentalURL,body,{headers})
       .map(res => res.json())
   }
 
@@ -53,7 +53,7 @@ export class HttpProvider {
     let headers = new Headers()
     headers.append("Accept","application/json")
     headers.append("Content-Type","application/json");
-    return this.http.post(this.offline.profileURL,body,{headers})
+    return this.http.post(this.online.profileURL,body,{headers})
       .map(res => res.json())
   }
 

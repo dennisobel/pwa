@@ -6,7 +6,7 @@ import { SampledataProvider } from '../../providers/sampledata/sampledata';
 import { HttpProvider } from '../../providers/http/http';
 
 // Pages
-import { BuysparePage } from '../buyspare/buyspare'
+
 
 
 @Component({

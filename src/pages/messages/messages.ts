@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, ViewController } from 'ionic-angular';
+import { ViewController } from 'ionic-angular';
 
 @Component({
   selector: 'page-messages',
@@ -8,7 +8,6 @@ import { NavController, ViewController } from 'ionic-angular';
 export class MessagesPage {
 
   constructor(
-    private navCtrl: NavController, 
     private viewCtrl: ViewController) {
   }
 

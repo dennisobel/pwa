@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, ViewController } from 'ionic-angular';
+import { ViewController } from 'ionic-angular';
 
 // Pages
 import { CalenderPage } from '../calender/calender';
@@ -19,11 +19,9 @@ export class BookservicePage {
   private products: any;
 
   constructor(
-    private navCtrl: NavController, 
     private viewCtrl: ViewController, 
     private dataProvider: SampledataProvider,
-    private helperFuncts: HelperfunctionsProvider,
-    private navParams: NavParams) {
+    private helperFuncts: HelperfunctionsProvider) {
   }
 
   ionViewDidLoad() {

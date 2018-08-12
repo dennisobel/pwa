@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, ViewController } from 'ionic-angular';
+import { ViewController } from 'ionic-angular';
 
 // Pages
 import { CalenderPage } from '../calender/calender';
@@ -18,7 +18,6 @@ export class LeasingPage {
   private products: any;  
 
   constructor(
-    private navCtrl: NavController, 
     private viewCtrl: ViewController, 
     private dataProvider: SampledataProvider,
     private helperFuncts: HelperfunctionsProvider) {

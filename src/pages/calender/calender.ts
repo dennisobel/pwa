@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, ViewController, AlertController } from 'ionic-angular';
-import { Subject } from 'rxjs/Subject';
+// import { Subject } from 'rxjs/Subject';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { HttpProvider } from '../../providers/http/http'
  

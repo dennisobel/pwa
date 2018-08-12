@@ -1,6 +1,6 @@
 // Modules
 import { Component } from '@angular/core';
-import { NavController, NavParams, ViewController } from 'ionic-angular';
+import { ViewController } from 'ionic-angular';
 
 // Providers
 import { SampledataProvider } from '../../providers/sampledata/sampledata';
@@ -19,21 +19,19 @@ import { SparemodelsPage } from '../sparemodels/sparemodels';
 export class BuysparePage {
   // private spareTypes: Array<{title: any, model: any}>[]=[]
   private spareTypes: any[]=[]
-  private spareSubTypes: any;
+  // private spareSubTypes: any;
   private products: any;
-  private data: Array<{title: any, model: any}>[]=[]
+  // private data: Array<{title: any, model: any}>[]=[]
 
   constructor(
-    private navCtrl: NavController, 
     private viewCtrl: ViewController, 
     private dataProvider: SampledataProvider,
-    private helperFuncts: HelperfunctionsProvider,
-    private navParams: NavParams) {
+    private helperFuncts: HelperfunctionsProvider,) {
   }
 
   ionViewDidLoad(){
-    // this.spareTypes = this.dataProvider.spareTypes()
-    this.spareSubTypes = this.dataProvider.spareSubTypes()
+    // // this.spareTypes = this.dataProvider.spareTypes()
+    // this.spareSubTypes = this.dataProvider.spareSubTypes()
 
     this.products = this.dataProvider.productsJson()
 
