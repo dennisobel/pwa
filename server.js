@@ -12,15 +12,11 @@ var databaseConfig = require('./config/database');
 
 // mongoose.connect(databaseConfig.url,{useNewUrlParser: true});
 // process.env.HOST = '169.239.252.209'
-app.set('port', process.env.PORT || 3000)
-app.set('host', process.env.HOST || '0.0.0.0');
-
-app.use(express.static('www'));
+app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(logger('dev'));
-app.use(cors());
 
+app.use(cors());
 app.use(function(req,res,next){
     // var allowedOrigins = [
     //   "http://localhost:8100/",
@@ -50,6 +46,9 @@ app.use(function(req,res,next){
     return next();
 })
 
+app.use(express.static('www'));
+app.set('port', process.env.PORT || 3000)
+app.set('host', process.env.HOST || '0.0.0.0');
 
 
 routes(app);
