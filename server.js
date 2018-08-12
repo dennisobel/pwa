@@ -55,4 +55,4 @@ routes(app);
 
 // export default app;
 // module.exports.app = app
-app.listen(app.get('port'),app.get('host'), () =>  console.log("Express server listening on port " + app.get('port')))
+app.listen(app.get('port'),app.get('host'), () =>  console.log("Express server listening on port " + app.get('port') + "host: "+ app.get('host')))
