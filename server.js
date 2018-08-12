@@ -48,7 +48,7 @@ app.use(function(req,res,next){
 
 app.use(express.static('www'));
 app.set('port', process.env.PORT || 3000)
-app.set('host', process.env.HOST || '0.0.0.0');
+app.set('host', process.env.HOST || '127.0.0.1');
 
 
 routes(app);
