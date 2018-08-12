@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-navbar hideBackButton class="">
+      <button ion-button show menuToggle>
+        <ion-icon name=menu></ion-icon>
+      </button>
+      <ion-title class="headertext" style="text-align:center;">ACHELIS KENYA LTD</ion-title>
+    </ion-navbar> 
+    <ion-toolbar text-center>
+        Buy Spare Parts
+    </ion-toolbar>  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <div>
+      <ion-list *ngFor="let data of spareTypes">
+        <ion-card class="curves" (click)="handleData(data)">
+          <ion-item>            
+            <ion-avatar item-start>
+                <img src="https://s3-us-west-1.amazonaws.com/acropolis-wp-content-uploads/2017/04/product_image_21-110.jpg">
+            </ion-avatar>
+            <p style="font-size: 1.5rem;" class="slide">{{data.title}}</p>
+ 
+          </ion-item>
+        </ion-card>
+      </ion-list>
+    </div>
+    <ion-fab top right edge>
+      <button
+        class="title-bar"
+        ion-fab
+        mini
+        color="secondarytext"
+        (click)="dismiss()"><ion-icon name="md-close"></ion-icon></button>
+    </ion-fab>
+  </ion-content>
+  

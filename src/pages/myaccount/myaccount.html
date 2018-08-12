@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar hideBackButton class="">
+    <button ion-button show menuToggle>
+      <ion-icon name=menu></ion-icon>
+    </button>
+    <ion-title class="headertext" style="text-align:center;">ACHELIS KENYA LTD</ion-title>
+  </ion-navbar> 
+  <ion-toolbar text-center>
+      Profile
+  </ion-toolbar>  
+</ion-header>
+
+
+<ion-content padding>
+  <div>
+    <form [formGroup]="profileFormGroup" (ngSubmit)="handleProfileSubmit()">
+        <ion-item class="curves">
+            <ion-label><ion-icon name="md-person"></ion-icon></ion-label>
+            <ion-input style="font-size: 1.3rem;" formControlName="name" placeholder="Name" type="text"></ion-input>
+        </ion-item>   
+
+        <ion-item class="curves">
+            <ion-label><ion-icon name="md-mail"></ion-icon></ion-label>
+            <ion-input style="font-size: 1.3rem;" formControlName="email" placeholder="Email" type="text"></ion-input>
+        </ion-item>      
+
+        <ion-item class="curves">
+            <ion-label><ion-icon name="md-call"></ion-icon></ion-label>
+            <ion-input style="font-size: 1.3rem;" formControlName="telephone" placeholder="Telephone" type="text"></ion-input>
+        </ion-item>   
+        
+        <ion-item class="curves">
+            <button
+              type="submit"
+              style="float: center; font-size: 1.2rem;"
+              ion-button
+              outline
+              block
+              color="darkprimarycolor"
+              [disabled]="!profileFormGroup.valid">SUBMIT</button>
+          </ion-item>        
+    </form>
+  </div>
+	<ion-fab top right edge>
+    <button
+      class="title-bar"
+      ion-fab
+      mini
+      color="secondarytext"
+      (click)="dismiss()"><ion-icon name="md-close"></ion-icon></button>
+	</ion-fab>
+</ion-content>

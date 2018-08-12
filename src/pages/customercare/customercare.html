@@ -1,0 +1,72 @@
+<ion-header>
+    
+  <ion-navbar hideBackButton class="">
+    <button ion-button show menuToggle>
+      <ion-icon name=menu></ion-icon>
+    </button>
+    <ion-title class="headertext" style="text-align:center;">ACHELIS</ion-title>
+  </ion-navbar> 
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+      <img id="getintouch" class="getintouch" src="../../assets/imgs/getintouch.png" alt="">
+      <ion-card-content>
+          <form [formGroup]="custFormGroup" (ngSubmit)="handleCustSubmit()">
+              <ion-item class="curves">
+                  <ion-label><ion-icon name="md-person"></ion-icon></ion-label>
+                  <ion-input style="font-size: 1.3rem;" formControlName="name" placeholder="Name" type="text"></ion-input>
+              </ion-item>   
+              
+              <ion-item class="curves">
+                  <ion-label><ion-icon name="md-mail"></ion-icon></ion-label>
+                  <ion-input style="font-size: 1.3rem;" formControlName="email" placeholder="Email" type="text"></ion-input>
+              </ion-item>      
+      
+              <ion-item class="curves">
+                  <ion-label><ion-icon name="md-call"></ion-icon></ion-label>
+                  <ion-input style="font-size: 1.3rem;" formControlName="telephone" placeholder="Telephone" type="text"></ion-input>
+              </ion-item>   
+              <br><hr>
+
+              <ion-item class="curves">
+                  <ion-label><ion-icon name="md-text"></ion-icon></ion-label>
+                  <ion-textarea 
+                  name="question"
+                  class="myInput "
+                  id="myInput" 
+                  #myInput
+                  rows="1" 
+                  maxLength="500" 
+                  
+                  formControlName="enquiry"
+                  placeholder="Ask your question"></ion-textarea>
+              </ion-item>                 
+              
+              <ion-item class="curves">
+                  <button
+                    type="submit"
+                    style="float: center; font-size: 1.2rem;"
+                    ion-button
+                    outline
+                    block
+                    color="darkprimarycolor"
+                    [disabled]="!custFormGroup.valid">SUBMIT</button>
+                </ion-item>                
+          </form>
+      </ion-card-content>
+      
+  </ion-card>
+
+	<ion-fab top right edge>
+    <button
+      class="title-bar"
+      ion-fab
+      mini
+      color="secondarytext"
+      (click)="dismiss()"><ion-icon name="md-close"></ion-icon></button>
+  </ion-fab>  
+  
+
+</ion-content>

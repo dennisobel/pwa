@@ -1,16 +1,263 @@
-// http://ionicframework.com/docs/theming/
+
+// @keyframes bgcolor {	    
+
+//     0% {
+//         background-color: #7B1FA2
+//     }
+
+//     10% {
+//         background-color: #E1BEE7
+//     }
+
+//     20% {
+//         background-color: #9C27B0
+//     }
+
+//     30% {
+//         background-color: #FFFFFF
+//     }
+
+//     40% {
+//         background-color: #FF5722
+//     }
+
+//     50% {
+//         background-color: #212121
+//     }
+
+//     60% {
+//         background-color: #757575
+//     }
+
+//     70% {
+//         background-color: #BDBDBD
+//     }
+
+//     80% {
+//         background-color: #ff3d00
+//     }
+
+//     90% {
+//         background-color: #dd2c00
+//     }
+
+//     100% {
+//         background-color: #ff6d00
+//     }
+// }
+
+// .drawer {
+//     -webkit-animation: bgcolor 5s infinite;
+//     animation: bgcolor 35s infinite;
+//     -webkit-animation-direction: alternate;
+//     animation-direction: alternate;
+// }
+
+.drawer{
+    // background-color: #212121;
+}
+
+.overaltheme{
+    background-color: #ffffff;
+}
+
+.toolbar-title.toolbar-title-md { color: map-get($colors, primarytext); }
+
+.fundstransfer{
+	height:105px;
+	width: 115px;
+	font-size: 1.1rem;
+}
+
+.footer{
+	// height:50px;
+	// width:61px;
+	background-color:#ede7f6;
+}
+
+.user{
+	// background-color:#212121;
+	width:50px;
+}
+
+.no-scroll .scroll-content{
+    overflow: hidden;
+}
+
+.curves{
+	border-radius: 7.5px;
+}  
+
+.title-bar{
+	// background-color: #bdbdbd;
+    // background-color: rgba(255, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.8)
+}     
+
+.butn{
+	height:43px;
+	background-color: #bdbdbd;
+}       	
+
+// custom icon
+
+ion-icon {
+  &[class*="custom-"] {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+        mask-size: contain;
+        mask-position: 50% 50%;
+        mask-repeat: no-repeat;
+        background: currentColor;
+    }
+
+  &[class*="custom-report"] {
+    mask-image: url(../assets/financial_report.svg);
+  }
+
+}
 
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+//alert
+.alertCustomCss{
+    // text color for basic alerts
+    color: #7B1FA2;
+    background-color: white;
+    overflow: hidden;
+
+
+    button{
+      color: white !important;
+      background-color: color($colors, darkprimarycolor, base) !important;
+    }
+
+    .alert-message { 
+        color: black; // text color for confirm alerts
+    }  
+
+    .alert-input{
+        color: black;
+    }
+
+    .alert-wrapper {
+        overflow: hidden;
+        border-radius: 7.5px;
+        border: 1px solid #7B1FA2;
+        background-color: color($colors, iconsandtext, base); // bg color of alert content
+    }      
+}
+
+.fab {
+    contain: layout;
+} 
+
+ion-fab {
+    ion-fab-list button[ion-fab] {
+        overflow: visible;
+
+        .label{
+          position: absolute;
+          bottom: 48px;
+          background: rgba(0,0,0,0.7);
+          height: 24px;
+          line-height: 16px;
+          padding-left: 8px;
+          padding-right: 8px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-radius: 3px;
+          color: #fff;
+          box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.14), 0 4px 5px rgba(0, 0, 0, 0.1);
+        }    
+
+        .toplabel{
+          position: absolute;
+          top: 48px;
+          background: rgba(0,0,0,0.7);
+          height: 24px;
+          line-height: 16px;
+          padding-left: 8px;
+          padding-right: 8px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-radius: 3px;
+          color: #fff;
+          box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.14), 0 4px 5px rgba(0, 0, 0, 0.1);
+        }                 
+    }
+}
+
+.otheropsbtn{
+  // position: absolute;
+  // bottom: 48px;
+  background: rgba(123,31,162,0.7);
+  height: 60px;
+  line-height: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 3px;
+  color: #fff;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.14), 0 4px 5px rgba(0, 0, 0, 0.1);      
+}
+
+
+.center {
+    margin: auto;
+    padding: 10px;
+
+}
+
+a {
+    color: #7B1FA2;
+}
+
+ion-input {
+    width: 100%;
+    color: #7B1FA2;
+    border-bottom: 1px solid #212121;
+}
+
+ion-label{
+    color:#212121;
+    font-weight: bold;
+    display: block;
+}
+
+// ion-select{
+//     // border-bottom: 1px solid #7B1FA2;
+// }
+
+ion-option{
+    border-bottom: 1px solid #7B1FA2;
+    color:  #7B1FA2;
+}
+
+.text-transform{
+    text-transform:none;  
+}
+
+.drawerbtn{
+   // @extend secondary;
+   // @extend block;
+   text-align : left;
+}
+
+
+
+
+// alternative theme for ol' dogz
+.bgrndtheme{
+    background-color: #0d47a1
+}
+
+.toolbar-background {
+  // background-color: #d84315;
+ background-color: #7B1FA2
+}
+

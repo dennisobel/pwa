@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-navbar hideBackButton class="">
+    <button ion-button show menuToggle>
+      <ion-icon name=menu></ion-icon>
+    </button>
+    <ion-title class="headertext" style="text-align:center;">ACHELIS KENYA LTD</ion-title>
+  </ion-navbar> 
+  <ion-toolbar text-center>
+      Messages
+  </ion-toolbar>  
+</ion-header>
+
+
+<ion-content padding>
+  <table class="table table-sm table-dark">
+    <thead>
+      <tr>
+        <th class="span1"><input type="checkbox" /></th>
+        <th scope="col">All</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="span1"><input type="checkbox" /></th>
+        <td>Achelis</td>
+        <td>Admin</td>
+        <td>Message body</td>
+        <td>11:23 PM</td>
+      </tr>
+      <tr>
+        <th class="span1"><input type="checkbox" /></th>
+        <td>My Account</td>
+        <td>Notifications</td>
+        <td>Message body</td>
+        <td>July 14</td>
+      </tr>
+      <tr>
+        <th class="span1"><input type="checkbox" /></th>
+        <td>Rental</td>
+        <td>Notifications</td>
+        <td>Message</td>
+        <td>July 13</td>
+      </tr>      
+      <tr>
+        <th class="span1"><input type="checkbox" /></th>
+        <td>Booking</td>
+        <td>Notifications</td>
+        <td>Message</td>
+        <td>July 11</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ion-fab top right edge>
+      <button
+        class="title-bar"
+        ion-fab
+        mini
+        color="secondarytext"
+        (click)="dismiss()"><ion-icon name="md-close"></ion-icon></button>
+    </ion-fab>  
+</ion-content>

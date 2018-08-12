@@ -1,0 +1,122 @@
+body {
+  background-color: #2a2f35;
+}
+
+.signUpError {
+	font-size: 20px;
+	color: red;
+	border: 1px;
+}
+
+.navbar {
+  background-color: black;
+  border: none;
+  height: 60px;
+}
+
+.navbar-brand span {
+  color: #ffd300;
+}
+
+.navbar-brand-centered {
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*display: block;*/
+    /*text-align: center;*/
+}
+.navbar>.container .navbar-brand-centered, 
+.navbar>.container-fluid .navbar-brand-centered {
+    margin-left: -80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar-right a {
+	float: right;
+	font-size: 20px;
+}
+
+#signIn {
+	max-width: 550px;
+    text-align: center;
+    /*padding: 20px;*/
+    /*margin-top: 100px;*/
+    /*margin-bottom: 150px;*/
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number] {
+  width: 570px;
+  padding: 12px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(444, 444, 443, 0.6);
+}
+
+@media screen and (min-width: 640px) {
+    .wrap {
+      /*top: 320rem;*/
+      /*width: 100%;*/
+      /*font-size: 30px;*/
+      font-family: Raleway;
+      /*height: 600rem;*/
+    }
+    .member {
+      /*width: 100%;*/
+    }
+    .member .name {
+    /*font-size: 20px;*/
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+      width: 100%;
+    }
+    .container li {
+      float: right;
+    }
+    .container .logout {
+      float: left;
+    }
+    .container .glyphicon {
+      float: right;
+      margin-right: 0;
+    }
+    .wrap {
+      top: 320rem;
+      width: 100%;
+      font-size: 30px;
+      font-family: Raleway;
+      height: 600rem;
+    }
+    .member {
+      width: 100%;
+    }
+    .member .name {
+    font-size: 20px;
+    }
+    .member-selected .model {
+    font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .wrap {
+      top: 320rem;
+      width: 100%;
+      font-size: 30px;
+      font-family: Raleway;
+      height: 600rem;
+    }
+    .member {
+      width: 100%;
+    }
+    .member .name {
+    font-size: 20px;
+    }
+
+}

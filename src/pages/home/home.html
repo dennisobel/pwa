@@ -1,11 +1,142 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Web
-    </ion-title>
-  </ion-navbar>
+  <ion-navbar hideBackButton class="">
+    <button ion-button show menuToggle>
+      <ion-icon name=menu></ion-icon>
+    </button>
+    <ion-title class="headertext" style="text-align:center;">ACHELIS KENYA LTD</ion-title>
+  </ion-navbar> 
 </ion-header>
- 
-<ion-content padding>
-  <button ion-button full (click)="showPlatform()">Where am I running?</button>
+
+<ion-content  class="" text-center>   
+  <br>
+    <div class=" center" id="body">
+      <ion-row>
+        <ion-col col-6>
+          <div class="curves">
+            <button 
+              class="btn btn-default  fundstransfer" 
+              style="color: #212121;" 
+              color="darkprimarycolor" 
+              outline
+              (click)="handleMyProfile()">
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br/>
+		      		<span class="name"><strong>MY PROFILE</strong></span>
+              <!-- <ion-icon name="hand"></ion-icon> -->
+            </button>
+          </div>          
+        </ion-col>        
+        <ion-col col-6>
+          <div class="curves">
+            <button 
+              class="btn btn-default  fundstransfer " 
+              style="color: #212121;" 
+              color="darkprimarycolor" 
+              outline
+              (click)="handleMessages()">     
+              <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><br/>       
+              <span class="name"><strong>MESSAGES</strong></span>
+              <!-- <ion-icon name="card"></ion-icon> -->
+            </button>
+          </div>          
+        </ion-col>
+      </ion-row> 
+
+      <ion-row>
+        <ion-col col-6>
+          <div class="curves">
+            <button 
+              class="btn btn-default  fundstransfer " 
+              style="color: #212121;" 
+              color="darkprimarycolor" 
+              outline
+              (click)="handleBuySpare()">     
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span><br/>       
+              <span class="name"><strong>BUY SPARE </strong> </span><br/>
+              <span class="name"><strong>PARTS</strong></span>
+              <!-- <ion-icon name="home"></ion-icon> -->
+            </button>
+          </div>
+        </ion-col>
+        <ion-col col-6>
+          <div class="curves">
+            <button 
+              class="btn btn-default  fundstransfer " 
+              style="color: #212121;" 
+              color="darkprimarycolor" 
+              outline
+              (click)="handleBookService()">      
+              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span><br/>      
+              <span class="name"><strong>BOOK</strong> </span><br/>
+              <span class="name"><strong>SERVICE</strong></span>              
+              <!-- <ion-icon name="cart"></ion-icon> -->
+            </button>
+          </div>          
+        </ion-col>
+      </ion-row>              
+
+      <ion-row>
+        <ion-col col-6>
+          <div class="curves">
+            <button 
+              class="btn btn-default fundstransfer " 
+              style="color: #212121;" 
+              color="darkprimarycolor" 
+              outline
+              (click)="handleLeasing()">     
+              <span class="glyphicon glyphicon-usd" aria-hidden="true"></span><br/>       
+              <span class="name"><strong>LEASING</strong> </span><br/>
+              <span class="name"><strong>& RENTAL</strong></span>                            
+            </button>
+          </div>
+        </ion-col>
+        <ion-col col-6>
+          <div class="curves">
+            <button 
+              class="btn btn-default  fundstransfer " 
+              style="color: #212121;" 
+              color="darkprimarycolor" 
+              outline
+              id="whatsapp-button"
+              (click)="handleCustomerCare()">       
+              <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span><br/>     
+              <span class="name"><strong>CUSTOMER</strong> </span><br/>
+              <span class="name"><strong>SUPPORT</strong></span>                       
+            </button>
+
+            
+              
+          </div>
+        </ion-col>
+      </ion-row>           
+    </div>
+
+
+
+
+<!-- 
+  <ion-fab center bottom>
+    <button [(ngModel)]="toggleFab" (click)="onToggleFab()" class="footer title-bar" ion-fab color="lightprimarycolor" ngDefaultControl>
+      <ion-icon name="add"></ion-icon>
+    </button>
+    <ion-fab-list side="right">
+      <button (click)="onAlert()" class="footer title-bar" ion-fab color="lightprimarycolor">
+        <ion-icon name="md-notifications"></ion-icon>
+        <div class="label">Alert</div>
+      </button>
+    </ion-fab-list>
+    <ion-fab-list side="left">
+      <button class="footer title-bar" ion-fab (click)="onChat()">
+        <ion-icon name="md-text"></ion-icon>
+        <div class="label">Chat</div>
+      </button>
+    </ion-fab-list>      
+     <ion-fab-list side="left">
+      <button menuToggle class="footer title-bar" ion-fab color="lightprimarycolor">
+        <ion-icon name="menu"></ion-icon>
+        <div class="label">Menu</div>
+      </button>
+    </ion-fab-list>    
+  </ion-fab>   -->
+
+
 </ion-content>

@@ -37,21 +37,33 @@ $colors: (
   primary:    #488aff,
   secondary:  #32db64,
   danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  dividercolor:#BDBDBD,
+  dark:       #222,
+  accent:	  #FF5722,
+  primarytext:#212121,
+  secondarytext:#757575,
+  darkprimarycolor:#7B1FA2,
+  lightprimarycolor:#E1BEE7,
+  primarycolor:#9C27B0,
+  iconsandtext:#FFFFFF,
+  headerclc:#d84315,
+  theme: #0d47a1
 );
-
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
 
+//md title
 
 
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
+$alert-md-background-color:#ffffff;
+$alert-md-button-background-color:#BDBDBD;
+$alert-md-button-background-color-activated:#BCAAA4;
 
 
 

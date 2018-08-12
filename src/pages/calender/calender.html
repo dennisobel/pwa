@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar hideBackButton class="">
+    <button ion-button show menuToggle>
+      <ion-icon name=menu></ion-icon>
+    </button>
+    <ion-title class="headertext" style="text-align:center;">ACHELIS KENYA LTD</ion-title>
+  </ion-navbar> 
+  <ion-toolbar text-center>
+      <!--{{viewDate | calenderDate:(view + 'ViewTitle')}}-->
+  </ion-toolbar>  
+</ion-header>
+
+<ion-content class="overaltheme">
+    <ion-card>
+        <ion-card-header>Choose dates</ion-card-header>
+        <form [formGroup]="bookserviceformgroup" (ngSubmit)="onSubmit()">
+           
+            
+            <ion-item>
+                <ion-label text-left color="darkprimarycolor">From</ion-label>
+                <ion-datetime 
+                    
+                    formControlName="fromdate" 
+                    displayFormat="DD/MM/YYYY"></ion-datetime>
+            </ion-item> 
+            
+            <ion-item>
+                <ion-label text-left color="darkprimarycolor">To</ion-label>
+                <ion-datetime 
+                    
+                    formControlName="todate" 
+                    displayFormat="DD/MM/YYYY"></ion-datetime>
+            </ion-item>
+
+            <ion-item class="curves">
+                <button 
+                    style="float: center; font-size: 1.2rem;" 
+                    ion-button 
+                    block 
+                    outline 
+                    color="darkprimarycolor" 
+                    [disabled]="!bookserviceformgroup.valid">Send Request<ion-icon name="md-arrow-round-forward"></ion-icon></button>
+            </ion-item>                 
+        </form>        
+    </ion-card>    
+
+    <ion-fab top right edge>
+        <button
+          class="title-bar"
+          ion-fab
+          mini
+          color="secondarytext"
+          (click)="dismiss()"><ion-icon name="md-close"></ion-icon></button>
+      </ion-fab>
+</ion-content>
+
+<!--[locale]="locale"-->
