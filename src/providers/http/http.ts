@@ -26,7 +26,7 @@ export class HttpProvider {
     let headers = new Headers()
     headers.append("Accept","application/json")
     headers.append("Content-Type","application/json");
-    return this.http.post(this.online.buyspareURL,body,{headers})
+    return this.http.post(this.offline.buyspareURL,body,{headers})
       .map(res => res.json())
   }
 
@@ -36,7 +36,7 @@ export class HttpProvider {
     headers.append("Accept","application/json")
     headers.append("Content-Type","application/json");
     console.log(headers)
-    return this.http.post(this.online.bookserviceURL,body,{headers})
+    return this.http.post(this.offline.bookserviceURL,body,{headers})
       .map(res => res.json())
   }
 
@@ -45,7 +45,7 @@ export class HttpProvider {
     let headers = new Headers()
     headers.append("Accept","application/json")
     headers.append("Content-Type","application/json");
-    return this.http.post(this.online.rentalURL,body,{headers})
+    return this.http.post(this.offline.rentalURL,body,{headers})
       .map(res => res.json())
   }
 
@@ -53,7 +53,7 @@ export class HttpProvider {
     let headers = new Headers()
     headers.append("Accept","application/json")
     headers.append("Content-Type","application/json");
-    return this.http.post(this.online.profileURL,body,{headers})
+    return this.http.post(this.offline.profileURL,body,{headers})
       .map(res => res.json())
   }
 
