@@ -12,7 +12,7 @@ var databaseConfig = require('./config/database');
 
 // mongoose.connect(databaseConfig.url,{useNewUrlParser: true});
 // process.env.HOST = '169.239.252.209'
-app.set('port', process.env.PORT || 5000)
+app.set('port', process.env.PORT || 3000)
 app.set('host', process.env.HOST || '0.0.0.0');
 
 app.use(express.static('www'));
