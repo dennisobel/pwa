@@ -4,6 +4,10 @@ const userController = require('../controllers/userController');
 const mailer = require('../mailer/nodemailer');
 
 let appRouter = (app)=>{
+	app.get('/',()=>{
+		res.sendFile('www/index.html',{root:__dirname})
+	})
+	
     app.post('/profile',(req,res)=>{    
           
         let output = `
